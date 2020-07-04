@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>se connecter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="icon2.png">
+    <link rel = "stylesheet" href="style.css">
+    <script>
+    function validateForm() {
+    var x = document.forms["myForm"]["fpsw"]["fgmail"].value;
+    if (x == "") {
+      alert("Data must be filled out");
+      return false;
+    }
+  }
+  function myFunction() {
+    document.getElementByClassName("myForm").submit();
+  }
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    <style>
+    a{
+      padding-right: 30px;
+      color : lightgray;
+      padding-left: 30px;
+      text-decoration: none;
+    }
+    a:hover{
+      color: black;
+      text-decoration-color:black;
+      text-decoration:underline;
+    }
+    .left-side:hover{
+      color: blueviolet;
+    }
+    .FirstH1{
+      font-size: 50px;
+      text-align: center;
+
+    }
+    .header1{
+      height: 700px;
+      width: 100%;
+
+    }
+    #btn1{
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+
+    }
+    body{
+      font-family : cursive;
+      background-image:url("back1.jpg")
+    }
+    input{
+      width:100%;
+      padding:20px;
+    }
+    button{
+      width:50%;
+      padding:20px;
+    }
+    button:hover{
+      transition:0.5em;
+    }
+  .hello{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+  }
+    </style>
+  </head>
+  <body>
+    <body>
+
+      <header class = "header1">
+        <h1 class="FirstH1">
+
+     </h1><br> <br> <br>
+
+        <form action="actionPage.php" style="border:1px solid #ccc"class="myForm">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Veuillez remplir les cases pour s'inscrire</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter Email" name="email" required><br>
+
+        <label for="psw"><b>Mot de passe</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+        <label for="psw-repeat"><b>Confirmer le mot de passe</b></label><br>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+        <label>
+
+
+
+        <p>En créons un compte vous adherer à notre <a href="terms.html" style="color:dodgerblue">terme de confidentialité</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn"style ="background-color:#85ef47">Annuler</button>
+          <button type="submit" class="signupbtn"style ="background-color:#f9fd50;float:right">Sign Up</button>
+        </div>
+      </div>
+    </form>
+      </header>
+  </body>
+</html>

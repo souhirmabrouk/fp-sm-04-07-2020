@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  display: block;
+  padding: 15px;
+  color: grey;
+  text-decoration: none;
+  position: relative;
+}
+ul li a.selected:before, ul li a:hover:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  text-decoration: underline;
+  color: black
+}
+
+.footer {
+²
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #262626;
+color: white;
+text-align: center;
+}
+button{
+  text-align: center;
+  width: 100%;
+  height:90px;
+  padding:5px;
+}
+h2{
+  padding: 40px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #02c39a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: 10px solid green;
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #02c39a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+#mainjf {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  display: flexbox;
+  justify-content: space-around;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 1.25 rem;
+  padding: 20px;
+}
+.jardin_f {
+  align-self: center;
+}
+#PourQ_jf,
+#comment_f {
+  margin-top: 50px;
+}
+.col py-3 px-lg-5 {
+  margin-left: 20px;
+  overflow: hidden;
+  width: 50%;
+}
+h3,
+h4 {
+  padding: 20px;
+}

@@ -1,0 +1,165 @@
+body{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+
+  transition: 0.3em;
+}
+
+ul {
+  list-style: none;
+
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  display: block;
+  padding: 15px;
+  color: grey;
+  text-decoration: none;
+  position: relative;
+}
+ul li a.selected:before, ul li a:hover:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  text-decoration: underline;
+  color: black
+}
+a{
+  padding-right: 30px;
+  color : lightgray;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+a:hover{
+  color: white;
+  font-size: 20px;
+  text-decoration-color:black;
+  text-decoration:underline;
+
+}
+
+p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  padding: 30px;
+  margin: 30px;
+  width: 50%;
+  height: auto;
+  float: left;
+  background-color: #dbc6eb;
+  border-radius:10px solid black;
+
+
+}
+main{
+  display: block;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 2px 16px;
+}
+#be{
+  display: flex;
+  justify-content: space-between;
+}
+.flip-card {
+background-color: transparent;
+width: 300px;
+height: 300px;
+perspective: 1000px;
+}
+.footer {
+
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #262626;
+color: white;
+text-align: center;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-card-back {
+
+transform: rotateY(180deg);
+}
+button{
+  padding: 20px;
+}
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #262626;
+color: white;
+text-align: center;
+}
+
+.img2{
+  float:right;
+  width: 40%;
+  height: 500px;
+}
+.img1{
+  display: grid;
+  justify-content: center;
+  float:left;
+  padding-left: 20%;
+
+}
+h1{
+  font-size: 100px;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+  shadow:0.6em;
+
+
+}
+.one{
+  width: 100%;
+  height: 300px;
+  background-image: url("flowers-summer-garden-daisies-35847");
+}
